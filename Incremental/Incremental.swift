@@ -190,7 +190,7 @@ protocol AnyI: class, Node {
 }
 
 public final class I<A>: AnyI, Node {
-    internal(set) public var value: A! // todo this will not be public!
+    internal(set) var value: A!
     var observers = Register<Observer>()
     var readers: Register<Reader> = Register()
     var height: Height {
